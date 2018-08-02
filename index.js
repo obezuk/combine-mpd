@@ -41,7 +41,7 @@ function appendRepresentationToMPD(representation, mpd) {
 
 	for (var i in process.argv) {
 
-		if (i < 4) {
+		if (process.argv.length < 4) {
 			throw new Error('Expected at least two command line arguments.');
 		}
 
